@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'widgets/simple_form.dart';
+import 'feature/signup/ui/screen/Signup_screen.dart';
 import 'package:supabase_flutter/supabase_flutter.dart';
 
 void main() async {
