@@ -1,0 +1,1 @@
+Los uses cases llaman al Repositorio abstracto entonces no sabe ni conoce cómo se implementa y así respetamos la arquitectura. Aquí en los usecases van todas las acciones de los usuarios, ejemplo: Un like de un usuario, un comentario, una serie de pasos que haga el usuario para hacer una funcionalidad completa.
