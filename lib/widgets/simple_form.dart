@@ -1,3 +1,4 @@
+import 'package:app26_1/feature/auth/dominio/usecases/signup_usecase.dart';
 import 'package:flutter/material.dart';
 
 class SimpleForm extends StatelessWidget {
@@ -21,7 +22,10 @@ class SimpleForm extends StatelessWidget {
             ),
             const SizedBox(height: 20),
             ElevatedButton(
-              onPressed: () {},
+              onPressed: () {
+                SignupUsecase usecase = SignupUsecase();
+                usecase.execute('email', 'password');
+              },
               child: const Text('Enviar'),
             ),
           ],

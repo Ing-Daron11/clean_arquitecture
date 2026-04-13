@@ -8,13 +8,13 @@ class AuthRepoImplementation extends AuthRepo {
   AuthDataSource _source = AuthDataSource();
 
   @override
-  Future<void> login(String email, String password) {
+  Future<void> login(String email, String password) async {
     AuthResponse response = await _source.login(email, password);
     throw UnimplementedError();
   }
 
   @override
-  Future<void> signup(String email, String password) {
+  Future<void> signup(String email, String password) async{
     AuthResponse response = await _source.signup(email, password);
     throw UnimplementedError();
   }
